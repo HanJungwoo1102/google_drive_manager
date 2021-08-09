@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 with open('requirements.txt') as f:
     requirements = f.read().splitlines()
@@ -15,7 +15,7 @@ setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/HanJungwoo1102/google_drive_manager",
-    packages=setuptools.find_packages(),
+    packages=find_packages(),
     python_requires='>=2.6',
     install_requires=requirements,
 )
